@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addtwono">
+
+    <TextView
+        android:id="@+id/main_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_200"
+        android:gravity="center"
+        android:text="Basic Calculator"
+        android:textSize="44dp"
+        android:textStyle="bold" />
+
+    <Button
+
+        android:id="@+id/btn_add_number"
+        android:layout_width="80dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/main_heading"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="22dp"
+        android:text="+"
+        android:textSize="70dp" />
+
+    <Button
+        android:id="@+id/btn_multiply_number"
+        android:layout_width="80dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/main_heading"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginTop="22dp"
+        android:layout_toRightOf="@id/btn_add_number"
+        android:text="×"
+        android:textSize="70dp" />
+
+    <Button
+        android:id="@+id/btn_subtraction_number"
+        android:layout_width="80dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/main_heading"
+        android:layout_marginTop="22dp"
+        android:layout_toRightOf="@id/btn_multiply_number"
+        android:text="-"
+        android:textSize="70dp" />
+
+    <Button
+        android:id="@+id/btn_modulus_number"
+        android:layout_width="80dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/main_heading"
+       android:layout_marginHorizontal="12dp"
+        android:layout_marginTop="22dp"
+        android:layout_toRightOf="@id/btn_subtraction_number"
+        android:text="%"
+        android:textSize="70dp" />
+
+    <EditText
+        android:id="@+id/nmber1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_subtraction_number"
+        android:layout_marginTop="15dp"
+        android:hint="Enter 1st Number"
+        android:inputType="number"
+        android:textSize="33dp" />
+
+    <EditText
+        android:id="@+id/nmber2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nmber1"
+        android:hint="Enter 2nd Number"
+        android:inputType="number"
+        android:textSize="33dp" />
+
+    <TextView
+        android:id="@+id/rzlt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nmber2"
+        android:background="@color/teal_700"
+        android:gravity="center"
+        android:text="Result"
+        android:textSize="44dp" />
+
+    <Button
+        android:id="@+id/clear_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rzlt"
+        android:layout_marginTop="8dp"
+        android:background="@color/teal_700"
+        android:gravity="center"
+        android:text="Clear"
+        android:textSize="33dp" />
+
+</RelativeLayout >
